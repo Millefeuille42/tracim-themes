@@ -34,9 +34,9 @@ input,
 .kanban__contentpage__content__left,
 .kanban__contentpage__wrapper__board__card,
 .radio_btn_group__btn__img,
-.tab
-  background-color: var(--standardBackground)
-
+.tab {
+  background-color: var(--standardBackground);
+}
 /* -- --accentBackground2 -- */
 .feedItem,
 .dropdownMenuItem > :hover,
@@ -48,9 +48,9 @@ input,
 .tagList__list__item,
 .toDo__progressBar_container,
 .iconbutton-secondary:hover,
-.contentItem:hover
-  background-color: var(--accentBackground2)
-
+.contentItem:hover {
+  background-color: var(--accentBackground2);
+}
 /* -- --accentBackground -- */
 button,
 .wsContentGeneric,
@@ -72,35 +72,35 @@ button,
 .flashmessage__container,
 .search,
 .iconbutton-secondary,
-.tab:hover
-  background-color: var(--accentBackground)
-
+.tab:hover {
+  background-color: var(--accentBackground);
+}
 /* -- others --*/
-span.mention-me
-  background-color: var(--mentionHighlight)
-
+span.mention-me {
+  background-color: var(--mentionHighlight);
+}
 /* -- --notification --*/
-.notification__list__item
-  background-color: var(--notification)
-
-.notification__list__item.isMention:not(.itemRead)
-  background-color: var(--mentionHighlightUnseen)
-
-.notification__list__item.isMention.itemRead
-  background-color: var(--mentionHighlight)
-
-.html-document__contentpage__timeline__messagelist__version:hover
-  color: black
-
-.file__contentpage__messagelist__version:hover
-  color: black
-
-.kanban__contentpage__messagelist__version:hover
-  color: black
-
-.promptMessage
-  background-color: #f2a027
-
+.notification__list__item {
+  background-color: var(--notification);
+}
+.notification__list__item.isMention:not(.itemRead) {
+  background-color: var(--mentionHighlightUnseen);
+}
+.notification__list__item.isMention.itemRead {
+  background-color: var(--mentionHighlight);
+}
+.html-document__contentpage__timeline__messagelist__version:hover {
+  color: #000;
+}
+.file__contentpage__messagelist__version:hover {
+  color: #000;
+}
+.kanban__contentpage__messagelist__version:hover {
+  color: #000;
+}
+.promptMessage {
+  background-color: #f2a027;
+}
 /* --- Text --- */
 /* -- --standardText --*/
 body,
@@ -117,7 +117,6 @@ button,
 .content__name,
 .tab,
 .folder__header__name,
-.content__name,
 .wsContentGeneric__header__reactions .EmojiReactionButton__buttonpicker,
 .wsContentGeneric__header__actions.dropdownMenuButton,
 .timedEvent__topContents > span,
@@ -137,9 +136,9 @@ button,
 .buttonComments:hover,
 .EmojiReactionButton__buttonpicker.active,
 .kanban__contentpage__wrapper__board__card__title__actions.dropdownMenuButton,
-.kanban__contentpage__wrapper__board__column__title__actions.dropdownMenuButton
-  color: var(--standardText)
-
+.kanban__contentpage__wrapper__board__column__title__actions.dropdownMenuButton {
+  color: var(--standardText);
+}
 /* -- --accentText --*/
 .notification__list__item.itemRead,
 .notification__list__item__meta,
@@ -149,85 +148,85 @@ button,
 .toDoItemChecked *,
 .badge,
 .feedItemFooter__right__participate,
-.iconbutton-link-light
-  color: var(--accentText)
-
+.iconbutton-link-light {
+  color: var(--accentText);
+}
 /* -- --accentText2 --*/
 .memberlist__list__item__info__role,
 .memberlist__list__item__info__firstColumn__username,
 .form-control,
 .form-control:focus,
 .css-1uccc91-singleValue,
-.css-1g6gooi
-  color: var(--accentText2)
-
+.css-1g6gooi {
+  color: var(--accentText2);
+}
 /* -- --alternativeText --*/
-.___none___
-  color: var(--alternativeText)
-
+.___none___ {
+  color: var(--alternativeText);
+}
 /* -- --alternativeText2 --*/
 .tagList__list__item__triangleIcon,
 .EmojiReactionButton__buttonpicker:hover:not(:disabled),
 .EmojiReactionButton__button:hover:not(.highlighted):not(:disabled),
-.EmojiReactionButton__buttonpicker:hover:not(.active):not(:disabled)
-  color: var(--alternativeText2)
-
+.EmojiReactionButton__buttonpicker:hover:not(.active):not(:disabled) {
+  color: var(--alternativeText2);
+}
 /* -- others --*/
-.profileNavigation
-  color: var(--navigationText)
-
+.profileNavigation {
+  color: var(--navigationText);
+}
 .profileNavigation:hover,
-.toDoItem__content__navigation > :hover
-  color: var(--accentNavigationText)
-
-.folder__header:hover .folder__header__triangleborder__triangle
-  color: var(--accentBackground)
-
+.toDoItem__content__navigation > :hover {
+  color: var(--accentNavigationText);
+}
+.folder__header:hover .folder__header__triangleborder__triangle {
+  color: var(--accentBackground);
+}
 /* --- CustomColors --- */
 /* -- ----customPrimary --*/
-.primaryColorFont
-  color: var(--customPrimary)
-
-.primaryColorBg
-  background-color: var(--customPrimary)
-
+.primaryColorFont {
+  color: var(--customPrimary);
+}
+.primaryColorBg {
+  background-color: var(--customPrimary);
+}
 .primaryColorBgOpacity,
-.primaryColorBorder
-  border-color: var(--customPrimary)
-
+.primaryColorBorder {
+  border-color: var(--customPrimary);
+}
 /* -- --customPrimaryAccent --*/
-.primaryColorFont:hover
-  color: var(--customPrimaryAccent)
-
+.primaryColorFont:hover {
+  color: var(--customPrimaryAccent);
+}
 /* -- --customPrimaryDim --*/
-.primaryColorBgOpacity
-  background-color: var(--customPrimaryDim)
-
+.primaryColorBgOpacity {
+  background-color: var(--customPrimaryDim);
+}
 /* --- Other Styling ---*/
-.tab__active
-  border-bottom: 1px solid transparent
-
-.folder__header__triangleborder__triangle
-  border-color: var(--standardBackground) transparent transparent transparent
-
-.activityList .feedItem__preview__overflowOverlay
-  background-image: linear-gradient(to top, var(--standardBackground), transparent), radial-gradient(ellipse at bottom, var(--standardBackground), transparent)
-
-.popupCreateContent .cardPopup__container
-  background: var(--accentBackground)
-
-.css-yk16xz-control
-  border-color: var(--accentBackground2)
-
-.wsContentGeneric__header
-  border-bottom: 1px solid var(--accentBackground2)
-
-.sidebar__search > .search
-  box-shadow: 0 0 20px 0 var(--sidebarColor)
-
-.toDoItemChecked
-  background: repeating-linear-gradient(25deg, var(--accentBackground), var(--accentBackground) 5px, var(--standardBackground) 5px, var(--standardBackground) 10px)
-
-.notification__list__item:hover
-  color: inherit
-
+.tab__active {
+  border-bottom: 1px solid transparent;
+}
+.folder__header__triangleborder__triangle {
+  border-color: var(--standardBackground) transparent transparent transparent;
+}
+.activityList .feedItem__preview__overflowOverlay {
+  background-image: linear-gradient(to top, var(--standardBackground), transparent), radial-gradient(ellipse at bottom, var(--standardBackground), transparent);
+}
+.popupCreateContent .cardPopup__container {
+  background: var(--accentBackground);
+}
+.css-yk16xz-control {
+  border-color: var(--accentBackground2);
+}
+.wsContentGeneric__header {
+  border-bottom: 1px solid var(--accentBackground2);
+}
+.sidebar__search > .search {
+  box-shadow: 0 0 20px 0 var(--sidebarColor);
+}
+.toDoItemChecked {
+  background: repeating-linear-gradient(25deg, var(--accentBackground), var(--accentBackground) 5px, var(--standardBackground) 5px, var(--standardBackground) 10px);
+}
+.notification__list__item:hover {
+  color: inherit;
+}
