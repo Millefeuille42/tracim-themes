@@ -49,13 +49,13 @@ Refer to the next section to send your fresh new theme to this repository.
 
 ### Creating
 
-To add a new theme, create a new branch named `feat/<your_username>/<theme_name>`, commit and push your `.styl` 
-file ONLY. Then create a new Pull Request. I will personally merge your PR.
+To add a new theme, create a new branch named `feat/<your_username>/<theme_name>`, commit and push your source and built
+theme files. Then create a new Pull Request. I will personally merge your PR.
 
 ### Editing
 
 To edit a theme that is not yours create a new branch name `fix/<creator_username>/<theme_name>`, commit and push the
-edited file. Then create a new Pull Request. For this request to be approved it first needs to
+edited source and built theme files. Then create a new Pull Request. For this request to be approved it first needs to
 feature the original creator as a reviewer (or mentioned in the PR comments). Their approbation is required.
 I will then personally merge your PR.
 
