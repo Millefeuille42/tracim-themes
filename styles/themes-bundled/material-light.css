@@ -1,0 +1,262 @@
+/* --- Change colors here ---*/
+/* A '+ sign' next to the color description means it has HEX 26 on alpha layer */
+/* Every additional + sign adds HEX26 */
+:root {
+  --standardBackground: #fafafa /*  grey lighten-5    */;
+  --accentBackground: #eee /*  grey lighten-3    */;
+  --accentBackground2: #e0e0e0 /*  grey lighten-2    */;
+  --alternativeBackground: #212121 /*  grey darken-4     */;
+  --mentionHighlight: rgba(238,255,65,0.322) /*  ++lime darken-4   */;
+  --mentionHighlightUnseen: rgba(238,255,65,0.471) /* +++lime darken-4   */;
+  --notification: rgba(21,101,192,0.471) /*  +++blue darken-4  */;
+  --standardText: #212121 /*  grey darken-4     */;
+  --accentText: #424242 /*  grey darken-3     */;
+  --accentText2: #616161 /*  grey darken-2     */;
+  --alternativeText: #bdbdbd /*  grey lighten-1    */;
+  --alternativeText2: #e0e0e0 /*  grey lighten-2    */;
+  --navigationText: #2962ff /*  blue accent-4     */;
+  --accentNavigationText: #2979ff /*  blue accent-3     */;
+  --customPrimary: #1b5e20 /*  green darken-4    */;
+  --customPrimaryAccent: #388e3c /*  green darken-2    */;
+  --customPrimaryDim: rgba(27,94,32,0.149) /*  +green darken-4   */;
+}
+/* --- Change sidebar colors here ---*/
+:root {
+  --sidebarColor: var(--standardBackground);
+  --sidebarColorDarken: var(--accentBackground);
+  --sidebarColorLighten: var(--alternativeBackground);
+  --sidebarLogoColor: var(--standardBackground);
+  --sidebarFontColor: var(--standardText);
+}
+/* /-- ---------------------------------------------------- --\*/
+/* |-- DO NO ALTER FURTHER UNLESS YOU WANT MORE GRANULARITY --|*/
+/* \__ ____________________________________________________ __/*/
+/* --- Background Color -- */
+/* -- --standardBackground -- */
+body,
+textarea,
+input,
+.dropdown-menu,
+.revision,
+.timeline__comment,
+.notification__list__item.itemRead,
+.notification,
+.pageTitleGeneric,
+.dashboard__workspace__detail,
+.dashboard__workspace__rightMenu,
+.feedItem__content,
+.memberlist__wrapper,
+.folder__header,
+.contentItem,
+.popover,
+.form-control,
+.form-control:focus,
+.toDoItem,
+.css-1pahdxg-control,
+.file__contentpage__content__left,
+.autocomplete,
+.emoji-mart,
+.css-yk16xz-control,
+.html-document__contentpage__content__left,
+.html-document__contentpage__edition__content__left,
+.textinput__box,
+.emoji-mart-category-label span,
+.kanban__contentpage__content__left,
+.kanban__contentpage__wrapper__board__card,
+.radio_btn_group__btn__img,
+.tab {
+  background-color: var(--standardBackground);
+}
+/* -- --accentBackground2 -- */
+.feedItem,
+.dropdownMenuItem > :hover,
+.dropdownMenuItem:hover:not(:active),
+.wsContentGeneric__content__right__header,
+.wsContentGeneric__content__right__header__icon,
+.autocomplete__item:hover,
+.autocomplete__item__active,
+.tagList__list__item,
+.toDo__progressBar_container,
+.iconbutton-secondary:hover,
+.contentItem:hover {
+  background-color: var(--accentBackground2);
+}
+/* -- --accentBackground -- */
+button,
+.wsContentGeneric,
+.recentActivities,
+.personalRecentActivities,
+.workspaceRecentActivities,
+.tracim__content,
+.tab__active,
+.linkPreview,
+.cardPopup__container,
+.kanban__contentpage__wrapper .react-kanban-column,
+.kanban__columnAdder:hover,
+.badge,
+.wsContentGeneric__content__right__header__icon.active,
+.folder .folder__header:hover,
+.memberlist__list__item:hover,
+.feedItemFooter__right__participate:hover,
+.EmojiReactionButton__button:not(.primaryColorBgOpacity),
+.flashmessage__container,
+.search,
+.iconbutton-secondary,
+.tab:hover {
+  background-color: var(--accentBackground);
+}
+/* -- others --*/
+span.mention-me {
+  background-color: var(--mentionHighlight);
+}
+/* -- --notification --*/
+.notification__list__item {
+  background-color: var(--notification);
+}
+.notification__list__item.isMention:not(.itemRead) {
+  background-color: var(--mentionHighlightUnseen);
+}
+.notification__list__item.isMention.itemRead {
+  background-color: var(--mentionHighlight);
+}
+.html-document__contentpage__timeline__messagelist__version:hover {
+  color: #000;
+}
+.file__contentpage__messagelist__version:hover {
+  color: #000;
+}
+.kanban__contentpage__messagelist__version:hover {
+  color: #000;
+}
+.promptMessage {
+  background-color: #f2a027;
+}
+/* --- Text --- */
+/* -- --standardText --*/
+body,
+textarea,
+input,
+button,
+.dropdown-menu,
+.dropdownMenuItem > *,
+.dropdownMenuItem > :hover,
+.dropdown,
+.iconbutton-dark,
+.iconbutton-secondary,
+.breadcrumbs__item__separator,
+.content__name,
+.tab,
+.folder__header__name,
+.wsContentGeneric__header__reactions .EmojiReactionButton__buttonpicker,
+.wsContentGeneric__header__actions.dropdownMenuButton,
+.timedEvent__topContents > span,
+.feedItemHeader__actionMenu.dropdownMenuButton,
+.selectStatus__dropdownbtn.btn,
+.emoji-mart,
+.notification__list__item,
+.tab:hover,
+.content__status,
+.iconbutton-link-light:hover,
+.wsContentGeneric__content__right__header__icon,
+.EmojiReactionButton__button > *,
+.toDoItem__content__navigation > *,
+.feedItemFooter__right__participate:hover,
+.contentListItem,
+.contentListItem__information,
+.buttonComments:hover,
+.EmojiReactionButton__buttonpicker.active,
+.kanban__contentpage__wrapper__board__card__title__actions.dropdownMenuButton,
+.kanban__contentpage__wrapper__board__column__title__actions.dropdownMenuButton {
+  color: var(--standardText);
+}
+/* -- --accentText --*/
+.notification__list__item.itemRead,
+.notification__list__item__meta,
+.EmojiReactionButton__buttonpicker,
+.wsContentGeneric__content__left__top,
+.toDoItemChecked,
+.toDoItemChecked *,
+.badge,
+.feedItemFooter__right__participate,
+.iconbutton-link-light {
+  color: var(--accentText);
+}
+/* -- --accentText2 --*/
+.memberlist__list__item__info__role,
+.memberlist__list__item__info__firstColumn__username,
+.form-control,
+.form-control:focus,
+.css-1uccc91-singleValue,
+.css-1g6gooi {
+  color: var(--accentText2);
+}
+/* -- --alternativeText --*/
+.___none___ {
+  color: var(--alternativeText);
+}
+/* -- --alternativeText2 --*/
+.tagList__list__item__triangleIcon,
+.EmojiReactionButton__buttonpicker:hover:not(:disabled),
+.EmojiReactionButton__button:hover:not(.highlighted):not(:disabled),
+.EmojiReactionButton__buttonpicker:hover:not(.active):not(:disabled) {
+  color: var(--alternativeText2);
+}
+/* -- others --*/
+.profileNavigation {
+  color: var(--navigationText);
+}
+.profileNavigation:hover,
+.toDoItem__content__navigation > :hover {
+  color: var(--accentNavigationText);
+}
+.folder__header:hover .folder__header__triangleborder__triangle {
+  color: var(--accentBackground);
+}
+/* --- CustomColors --- */
+/* -- ----customPrimary --*/
+.primaryColorFont {
+  color: var(--customPrimary);
+}
+.primaryColorBg {
+  background-color: var(--customPrimary);
+}
+.primaryColorBgOpacity,
+.primaryColorBorder {
+  border-color: var(--customPrimary);
+}
+/* -- --customPrimaryAccent --*/
+.primaryColorFont:hover {
+  color: var(--customPrimaryAccent);
+}
+/* -- --customPrimaryDim --*/
+.primaryColorBgOpacity {
+  background-color: var(--customPrimaryDim);
+}
+/* --- Other Styling ---*/
+.tab__active {
+  border-bottom: 1px solid transparent;
+}
+.folder__header__triangleborder__triangle {
+  border-color: var(--standardBackground) transparent transparent transparent;
+}
+.activityList .feedItem__preview__overflowOverlay {
+  background-image: linear-gradient(to top, var(--standardBackground), transparent), radial-gradient(ellipse at bottom, var(--standardBackground), transparent);
+}
+.popupCreateContent .cardPopup__container {
+  background: var(--accentBackground);
+}
+.css-yk16xz-control {
+  border-color: var(--accentBackground2);
+}
+.wsContentGeneric__header {
+  border-bottom: 1px solid var(--accentBackground2);
+}
+.sidebar__search > .search {
+  box-shadow: 0 0 20px 0 var(--sidebarColor);
+}
+.toDoItemChecked {
+  background: repeating-linear-gradient(25deg, var(--accentBackground), var(--accentBackground) 5px, var(--standardBackground) 5px, var(--standardBackground) 10px);
+}
+.notification__list__item:hover {
+  color: inherit;
+}

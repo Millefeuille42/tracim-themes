@@ -1,0 +1,30 @@
+/* --- Change colors here ---*/
+/* A '+ sign' next to the color description means it has HEX 26 on alpha layer */
+/* Every additional + sign adds HEX26 */
+:root {
+  --standardBackground: #fafafa /*  grey lighten-5    */;
+  --accentBackground: #eee /*  grey lighten-3    */;
+  --accentBackground2: #e0e0e0 /*  grey lighten-2    */;
+  --alternativeBackground: #212121 /*  grey darken-4     */;
+  --mentionHighlight: rgba(238,255,65,0.322) /*  ++lime darken-4   */;
+  --mentionHighlightUnseen: rgba(238,255,65,0.471) /* +++lime darken-4   */;
+  --notification: rgba(21,101,192,0.471) /*  +++blue darken-4  */;
+  --standardText: #212121 /*  grey darken-4     */;
+  --accentText: #424242 /*  grey darken-3     */;
+  --accentText2: #616161 /*  grey darken-2     */;
+  --alternativeText: #bdbdbd /*  grey lighten-1    */;
+  --alternativeText2: #e0e0e0 /*  grey lighten-2    */;
+  --navigationText: #2962ff /*  blue accent-4     */;
+  --accentNavigationText: #2979ff /*  blue accent-3     */;
+  --customPrimary: #1b5e20 /*  green darken-4    */;
+  --customPrimaryAccent: #388e3c /*  green darken-2    */;
+  --customPrimaryDim: rgba(27,94,32,0.149) /*  +green darken-4   */;
+}
+/* --- Change sidebar colors here ---*/
+:root {
+  --sidebarColor: var(--standardBackground);
+  --sidebarColorDarken: var(--accentBackground);
+  --sidebarColorLighten: var(--alternativeBackground);
+  --sidebarLogoColor: var(--standardBackground);
+  --sidebarFontColor: var(--standardText);
+}
