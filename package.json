@@ -1,0 +1,23 @@
+{
+  "name": "tracim-theme-engine",
+  "description": "A simple them generator for Tracim",
+  "version": "1.0.0",
+  "author": "Millefeuille <https://github.com/Millefeuille42>",
+
+  "scripts": {
+    "init": "mkdir -p ./styles/themes; mkdir -p ./styles/themes-bundled",
+
+    "build:patch": "./node_modules/stylus/bin/stylus ./srcs/styles/theme-patch.styl -o ./styles/theme-patch.css",
+    "build:themes": "./node_modules/stylus/bin/stylus ./srcs/styles/themes -o ./styles/themes",
+    "build:bundled": "bash ./srcs/scripts/bundle.bash",
+
+    "prebuild": "npm run-script init",
+    "build": "npm run-script build:patch; npm run-script build:themes; npm run-script build:bundled"
+  },
+
+  "dependencies": {
+    "stylus": "^0.59.0"
+  },
+
+  "license": "MIT"
+}
