@@ -1,6 +1,7 @@
 # Tracim Themes
 
----
+A [Tracim](https://github.com/tracim/tracim) theme engine and theme repository
+
 
 ## How does it work
 
@@ -8,7 +9,6 @@ The `styles/theme-patch.css` stylesheet changes colors on Tracim HTML nodes to t
 
 The theme stylesheets contains definitions of these variables and their attribution to various colors.
 
----
 
 ## How to use
 
@@ -26,7 +26,6 @@ If you can't or do not want to load two files, you can load bundled stylesheets.
 
 These files also contain the `styles/theme-patch.css` stylesheet, permitting to apply the style in a single file.
 
----
 
 ## Creating a theme
 
@@ -45,7 +44,6 @@ npm run build
 
 Refer to the next section to send your fresh new theme to this repository.
 
----
 
 ## Contributing
 
@@ -66,7 +64,6 @@ I will then personally merge your PR.
 Other contributions are welcome and need to follow the same process as creating a theme, except that the branch name
 must be `misc/<whatever...>`. I will personally review and merge your PR.
 
----
 
 ## References
 
