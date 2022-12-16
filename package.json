@@ -12,7 +12,7 @@
     "build:bundled": "bash ./srcs/scripts/bundle.bash",
 
     "prebuild": "npm run-script init",
-    "build": "npm run-script build:patch; npm run-script build:themes; npm run-script build:bundled"
+    "build": "bash ./srcs/scripts/build.bash"
   },
 
   "dependencies": {
