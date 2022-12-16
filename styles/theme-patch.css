@@ -7,13 +7,20 @@ body,
 textarea,
 input,
 .dropdown-menu,
-.revision,
 .timeline__comment,
 .notification__list__item.itemRead,
+.filterBar,
+.filterBar .textinput__box,
+.filterBar .textinput__text,
 .notification,
+.account__userpreference__setting,
+.workspace_advanced__contentpage__content__left,
 .pageTitleGeneric,
+.css-26l3qy-menu,
+.revision,
 .dashboard__workspace__detail,
 .dashboard__workspace__rightMenu,
+.menusubcomponent,
 .feedItem__content,
 .memberlist__wrapper,
 .folder__header,
@@ -34,7 +41,11 @@ div.tox .tox-toolbar,
 .html-document__contentpage__content__left,
 .html-document__contentpage__edition__content__left,
 .textinput__box,
+.tox .tox-collection__item,
+.tox .tox-collection--list .tox-collection__item--enabled,
 .emoji-mart-category-label span,
+.profile__mainBar,
+.profile__content > div,
 .kanban__contentpage__content__left,
 .kanban__contentpage__wrapper__board__card,
 .radio_btn_group__btn__img,
@@ -50,6 +61,7 @@ div.tox .tox-toolbar,
 .autocomplete__item:hover,
 .autocomplete__item__active,
 .tagList__list__item,
+.emoji-mart-category .emoji-mart-emoji:hover::before,
 .toDo__progressBar_container,
 .iconbutton-secondary:hover,
 .contentItem:hover {
@@ -60,6 +72,16 @@ button,
 .wsContentGeneric,
 .recentActivities,
 .personalRecentActivities,
+.menusubcomponent__list__item:hover:not(.active),
+.personaldata__form__txtinput,
+.rightPartClose .wsContentGeneric__content__right__header__icon.active,
+.personaldata__form__txtinput:focus,
+.agendaInfo__content__link__url,
+.agendaInfo__content__link__icon,
+.wsContentGeneric__content__right__content,
+.webdavInfo__content__link__url,
+.webdavInfo__content__link__icon,
+.table tr:nth-child(2n),
 .workspaceRecentActivities,
 .tracim__content,
 .tab__active,
@@ -126,22 +148,27 @@ button,
 .wsContentGeneric .headerBtn__link,
 .wsContentGeneric .headerBtn__link:hover,
 .folder__header__name,
+.memberlist__list__item__delete,
+.tox .tox-collection--list .tox-collection__item--enabled,
 .wsContentGeneric__header__reactions .EmojiReactionButton__buttonpicker,
 .wsContentGeneric__header__actions.dropdownMenuButton,
 .timedEvent__topContents > span,
 .feedItemHeader__actionMenu.dropdownMenuButton,
 .selectStatus__dropdownbtn.btn,
 .emoji-mart,
+.memberActivity__workspace,
 .notification__list__item,
 .tab:hover,
 .content__status,
 .iconbutton-link-light:hover,
 .wsContentGeneric__content__right__header__icon,
+.userinfo__email > a,
 .EmojiReactionButton__button > *,
 .toDoItem__content__navigation > *,
 .feedItemFooter__right__participate:hover,
 .contentListItem,
 .contentListItem__information,
+.tox .tox-collection--list .tox-collection__item--active:not(.tox-collection__item--state-disabled),
 .buttonComments:hover,
 .EmojiReactionButton__buttonpicker.active,
 .kanban__contentpage__wrapper__board__card__title__actions.dropdownMenuButton,
@@ -158,6 +185,8 @@ button,
 .emptyListMessage,
 .advancedSearch__content__detail,
 .badge,
+.memberActivity__workspace:hover,
+.sidebar__item__menu__element *,
 .feedItemFooter__right__participate,
 .iconbutton-link-light {
   color: var(--accentText);
@@ -202,7 +231,8 @@ button,
 }
 /* --- CustomColors --- */
 /* -- ----customPrimary --*/
-.primaryColorFont {
+.primaryColorFont,
+.primaryColorFontDarken {
   color: var(--customPrimary);
 }
 .primaryColorBg {
@@ -213,11 +243,13 @@ button,
   border-color: var(--customPrimary);
 }
 /* -- --customPrimaryAccent --*/
-.primaryColorFont:hover {
+.primaryColorFont:hover,
+.primaryColorFontHover:hover {
   color: var(--customPrimaryAccent);
 }
 /* -- --customPrimaryDim --*/
-.primaryColorBgOpacity {
+.primaryColorBgOpacity,
+.primaryColorBgLighten {
   background-color: var(--customPrimaryDim);
 }
 /* --- Other Styling ---*/
@@ -236,11 +268,17 @@ button,
 .css-yk16xz-control {
   border-color: var(--accentBackground2);
 }
-.wsContentGeneric__header {
+.wsContentGeneric__header,
+.filterBar .textinput__text {
   border-bottom: 1px solid var(--accentBackground2);
 }
 .sidebar__search > .search {
   box-shadow: 0 0 20px 0 var(--sidebarColor);
+}
+.feedItem__preview__image > img,
+.timeline__comment__body__content__text img,
+.autocomplete {
+  box-shadow: 0 0 10px var(--standardBackground);
 }
 .toDoItemChecked {
   background: repeating-linear-gradient(25deg, var(--accentBackground), var(--accentBackground) 5px, var(--standardBackground) 5px, var(--standardBackground) 10px);
@@ -249,6 +287,27 @@ button,
   color: inherit;
 }
 .tox .tox-tbtn:hover svg,
+.emoji-mart button,
+.emoji-mart-category button.emoji-mart-emoji span,
 .tox .tox-tbtn svg {
   fill: var(--accentText2);
+}
+.filterBar {
+  border: 1px solid var(--standardBackground);
+}
+.wsContentGeneric__header,
+.filterBar .textinput__text {
+  border-bottom: 1px solid var(--standardBackground);
+}
+.thread__contentpage__comment,
+.thread__contentpage__messagelist__version,
+.thread__contentpage__texteditor__textinput > textarea {
+  background-color: var(--standardBackground);
+}
+.table td,
+.table th {
+  border-top: 1px solid var(--accentBackground2);
+}
+.table thead th {
+  border-bottom: 2px solid var(--accentBackground2);
 }
