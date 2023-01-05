@@ -10,6 +10,8 @@ input,
 .css-9gakcf-option,
 .shareDownload__password__wrapper,
 .timeline__comment,
+.searchFilterMenu__title,
+.searchFilterMenu,
 .notification__list__item.itemRead,
 .filterBar,
 .filterBar .textinput__box,
@@ -66,6 +68,9 @@ div.tox .tox-toolbar,
 .tagList__list__item,
 .emoji-mart-category .emoji-mart-emoji:hover::before,
 .toDo__progressBar_container,
+.search,
+.checkboxFilter__title,
+.searchFilterMenu__content__item__title,
 .iconbutton-secondary:hover,
 .css-1n7v3ny-option,
 .folder .folder__header:hover,
@@ -101,7 +106,6 @@ button,
 .feedItemFooter__right__participate:hover,
 .EmojiReactionButton__button:not(.primaryColorBgOpacity),
 .flashmessage__container,
-.search,
 .iconbutton-secondary,
 .dropdown-item,
 .tab:hover
@@ -289,7 +293,10 @@ button,
 .feedItem__preview__image > img,
 .timeline__comment__body__content__text img,
 .autocomplete
-  box-shadow 0 0 10px var(--mainShadow);
+  box-shadow 0 0 10px var(--mainShadow)
+
+.search
+  box-shadow 0 0 20px 0 var(--mainShadow)
 
 
 .toDoItemChecked
@@ -348,7 +355,11 @@ button,
 
 .revision
   width inherit
-  margin 10px 15% 10px 0
+  margin 0 15% 0 0
 
+.timeline__messagelist__item + .revision
+  margin-top 20px
 
-
+.revision + .timeline__messagelist__item
+  margin-top 20px
+  margin-bottom 0
