@@ -7,6 +7,8 @@ body,
 textarea,
 input,
 .dropdown-menu,
+.css-9gakcf-option,
+.shareDownload__password__wrapper,
 .timeline__comment,
 .notification__list__item.itemRead,
 .filterBar,
@@ -64,6 +66,9 @@ div.tox .tox-toolbar,
 .emoji-mart-category .emoji-mart-emoji:hover::before,
 .toDo__progressBar_container,
 .iconbutton-secondary:hover,
+.css-1n7v3ny-option,
+.folder .folder__header:hover,
+.css-9gakcf-option:hover,
 .contentItem:hover {
   background-color: var(--accentBackground2);
 }
@@ -91,13 +96,13 @@ button,
 .kanban__columnAdder:hover,
 .badge,
 .wsContentGeneric__content__right__header__icon.active,
-.folder .folder__header:hover,
 .memberlist__list__item:hover,
 .feedItemFooter__right__participate:hover,
 .EmojiReactionButton__button:not(.primaryColorBgOpacity),
 .flashmessage__container,
 .search,
 .iconbutton-secondary,
+.dropdown-item,
 .tab:hover {
   background-color: var(--accentBackground);
 }
@@ -178,6 +183,7 @@ button,
 /* -- --accentText --*/
 .notification__list__item.itemRead,
 .notification__list__item__meta,
+.shareDownload__password__link,
 .EmojiReactionButton__buttonpicker,
 .wsContentGeneric__content__left__top,
 .toDoItemChecked,
@@ -193,6 +199,7 @@ button,
 }
 /* -- --accentText2 --*/
 .memberlist__list__item__info__role,
+.shareDownload__password__link:hover,
 .memberlist__list__item__info__firstColumn__username,
 .form-control,
 .form-control:focus,
@@ -265,20 +272,21 @@ button,
 .popupCreateContent .cardPopup__container {
   background: var(--accentBackground);
 }
-.css-yk16xz-control {
-  border-color: var(--accentBackground2);
+.css-yk16xz-control,
+.shareDownload__password__wrapper {
+  border-color: var(--standardBackground);
 }
 .wsContentGeneric__header,
 .filterBar .textinput__text {
   border-bottom: 1px solid var(--accentBackground2);
 }
 .sidebar__search > .search {
-  box-shadow: 0 0 20px 0 var(--sidebarColor);
+  box-shadow: 0 0 20px 0 var(--sidebarShadow);
 }
 .feedItem__preview__image > img,
 .timeline__comment__body__content__text img,
 .autocomplete {
-  box-shadow: 0 0 10px var(--standardBackground);
+  box-shadow: 0 0 10px var(--mainShadow);
 }
 .toDoItemChecked {
   background: repeating-linear-gradient(25deg, var(--accentBackground), var(--accentBackground) 5px, var(--standardBackground) 5px, var(--standardBackground) 10px);
@@ -310,4 +318,32 @@ button,
 }
 .table thead th {
   border-bottom: 2px solid var(--accentBackground2);
+}
+.popover,
+.popover-body {
+  background-color: var(--accentBackground);
+}
+.popover.bs-popover-auto[x-placement^="bottom"] .arrow::after,
+.popover.bs-popover-bottom .arrow::after {
+  border-bottom-color: var(--accentBackground);
+}
+/* --- Calendar revert fixes ---*/
+#event_details_template textarea,
+#event_details_template input {
+  background-color: #fff;
+}
+#eventDetailsTable .label,
+.loaderInfo,
+#CalDavZAPPopup {
+  color: #000;
+}
+/* /-- --------------------- --\*/
+/* |-- COLOR UNRELATED FIXES --|*/
+/* \__ _____________________ __/*/
+.timeline__comment.received {
+  margin-inline-end: 0;
+}
+.revision {
+  width: inherit;
+  margin: 10px 15% 10px 0;
 }

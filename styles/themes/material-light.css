@@ -28,3 +28,9 @@
   --sidebarLogoColor: var(--standardBackground);
   --sidebarFontColor: var(--standardText);
 }
+/* --- Change shadows here ---*/
+/* Comment it to disable shadows */
+:root {
+  --mainShadow: var(--alternativeText);
+  --sidebarShadow: var(--alternativeText);
+}

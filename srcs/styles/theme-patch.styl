@@ -7,6 +7,8 @@ body,
 textarea,
 input,
 .dropdown-menu,
+.css-9gakcf-option,
+.shareDownload__password__wrapper,
 .timeline__comment,
 .notification__list__item.itemRead,
 .filterBar,
@@ -65,6 +67,9 @@ div.tox .tox-toolbar,
 .emoji-mart-category .emoji-mart-emoji:hover::before,
 .toDo__progressBar_container,
 .iconbutton-secondary:hover,
+.css-1n7v3ny-option,
+.folder .folder__header:hover,
+.css-9gakcf-option:hover,
 .contentItem:hover
   background-color: var(--accentBackground2)
 
@@ -92,41 +97,41 @@ button,
 .kanban__columnAdder:hover,
 .badge,
 .wsContentGeneric__content__right__header__icon.active,
-.folder .folder__header:hover,
 .memberlist__list__item:hover,
 .feedItemFooter__right__participate:hover,
 .EmojiReactionButton__button:not(.primaryColorBgOpacity),
 .flashmessage__container,
 .search,
 .iconbutton-secondary,
+.dropdown-item,
 .tab:hover
-  background-color: var(--accentBackground)
+  background-color var(--accentBackground)
 
 /* -- others --*/
 span.mention-me
-  background-color: var(--mentionHighlight)
+  background-color var(--mentionHighlight)
 
 /* -- --notification --*/
 .notification__list__item
-  background-color: var(--notification)
+  background-color var(--notification)
 
 .notification__list__item.isMention:not(.itemRead)
-  background-color: var(--mentionHighlightUnseen)
+  background-color var(--mentionHighlightUnseen)
 
 .notification__list__item.isMention.itemRead
-  background-color: var(--mentionHighlight)
+  background-color var(--mentionHighlight)
 
 .html-document__contentpage__timeline__messagelist__version:hover
-  color: black
+  color black
 
 .file__contentpage__messagelist__version:hover
-  color: black
+  color black
 
 .kanban__contentpage__messagelist__version:hover
-  color: black
+  color black
 
 .promptMessage
-  background-color: #f2a027
+  background-color #f2a027
 
 /* --- Text --- */
 /* -- --standardText --*/
@@ -175,11 +180,12 @@ button,
 .EmojiReactionButton__buttonpicker.active,
 .kanban__contentpage__wrapper__board__card__title__actions.dropdownMenuButton,
 .kanban__contentpage__wrapper__board__column__title__actions.dropdownMenuButton
-  color: var(--standardText)
+  color var(--standardText)
 
 /* -- --accentText --*/
 .notification__list__item.itemRead,
 .notification__list__item__meta,
+.shareDownload__password__link,
 .EmojiReactionButton__buttonpicker,
 .wsContentGeneric__content__left__top,
 .toDoItemChecked,
@@ -191,20 +197,21 @@ button,
 .sidebar__item__menu__element *,
 .feedItemFooter__right__participate,
 .iconbutton-link-light
-  color: var(--accentText)
+  color var(--accentText)
 
 /* -- --accentText2 --*/
 .memberlist__list__item__info__role,
+.shareDownload__password__link:hover,
 .memberlist__list__item__info__firstColumn__username,
 .form-control,
 .form-control:focus,
 .css-1uccc91-singleValue,
 .css-1g6gooi
-  color: var(--accentText2)
+  color var(--accentText2)
 
 /* -- --alternativeText --*/
 .___none___
-  color: var(--alternativeText)
+  color var(--alternativeText)
 
 /* -- --alternativeText2 --*/
 .tagList__list__item__triangleIcon,
@@ -218,86 +225,89 @@ button,
 .tox .tox-statusbar__path-item,
 .tox .tox-statusbar__wordcount,
 .EmojiReactionButton__buttonpicker:hover:not(.active):not(:disabled)
-  color: var(--alternativeText2)
+  color var(--alternativeText2)
 
 /* -- others --*/
 .profileNavigation
-  color: var(--navigationText)
+  color var(--navigationText)
 
 .profileNavigation:hover,
 .toDoItem__content__navigation > :hover
-  color: var(--accentNavigationText)
+  color var(--accentNavigationText)
 
 .folder__header:hover .folder__header__triangleborder__triangle
-  color: var(--accentBackground)
+  color var(--accentBackground)
 
 /* --- CustomColors --- */
 /* -- ----customPrimary --*/
 .primaryColorFont,
 .primaryColorFontDarken
-  color: var(--customPrimary)
+  color var(--customPrimary)
 
 .primaryColorBg
-  background-color: var(--customPrimary)
+  background-color var(--customPrimary)
 
 .primaryColorBgOpacity,
 .primaryColorBorder
-  border-color: var(--customPrimary)
+  border-color var(--customPrimary)
 
 /* -- --customPrimaryAccent --*/
 .primaryColorFont:hover,
 .primaryColorFontHover:hover
-  color: var(--customPrimaryAccent)
+  color var(--customPrimaryAccent)
 
 /* -- --customPrimaryDim --*/
 .primaryColorBgOpacity,
 .primaryColorBgLighten
-  background-color: var(--customPrimaryDim)
+  background-color var(--customPrimaryDim)
 
 /* --- Other Styling ---*/
 .tab__active
-  border-bottom: 1px solid transparent
+  border-bottom 1px solid transparent
 
 .folder__header__triangleborder__triangle
-  border-color: var(--standardBackground) transparent transparent transparent
+  border-color var(--standardBackground) transparent transparent transparent
 
 .activityList .feedItem__preview__overflowOverlay
-  background-image: linear-gradient(to top, var(--standardBackground), transparent), radial-gradient(ellipse at bottom, var(--standardBackground), transparent)
+  background-image linear-gradient(to top, var(--standardBackground), transparent), radial-gradient(ellipse at bottom, var(--standardBackground), transparent)
 
 .popupCreateContent .cardPopup__container
-  background: var(--accentBackground)
+  background var(--accentBackground)
 
-.css-yk16xz-control
-  border-color: var(--accentBackground2)
+.css-yk16xz-control,
+.shareDownload__password__wrapper
+  border-color var(--standardBackground)
 
 .wsContentGeneric__header,
 .filterBar .textinput__text
-  border-bottom: 1px solid var(--accentBackground2)
+  border-bottom 1px solid var(--accentBackground2)
+
 
 .sidebar__search > .search
-  box-shadow: 0 0 20px 0 var(--sidebarColor)
+  box-shadow 0 0 20px 0 var(--sidebarShadow)
 
 .feedItem__preview__image > img,
 .timeline__comment__body__content__text img,
 .autocomplete
-  box-shadow: 0 0 10px var(--standardBackground);
+  box-shadow 0 0 10px var(--mainShadow);
+
 
 .toDoItemChecked
-  background: repeating-linear-gradient(25deg, var(--accentBackground), var(--accentBackground) 5px, var(--standardBackground) 5px, var(--standardBackground) 10px)
+  background repeating-linear-gradient(25deg, var(--accentBackground), var(--accentBackground) 5px, var(--standardBackground) 5px, var(--standardBackground) 10px)
 
 .notification__list__item:hover
-  color: inherit
+  color inherit
 
 .tox .tox-tbtn:hover svg,
 .emoji-mart button, .emoji-mart-category button.emoji-mart-emoji span,
 .tox .tox-tbtn svg
-  fill: var(--accentText2)
+  fill var(--accentText2)
 
 .filterBar
-  border: 1px solid var(--standardBackground)
+  border 1px solid var(--standardBackground)
 
 .wsContentGeneric__header, .filterBar .textinput__text
-  border-bottom: 1px solid var(--standardBackground)
+  border-bottom 1px solid var(--standardBackground)
 
 .thread__contentpage__comment,
 .thread__contentpage__messagelist__version,
@@ -306,7 +316,39 @@ button,
 
 .table td,
 .table th
-  border-top: 1px solid var(--accentBackground2)
+  border-top 1px solid var(--accentBackground2)
 
 .table thead th
   border-bottom 2px solid var(--accentBackground2)
+
+
+.popover,
+.popover-body
+  background-color var(--accentBackground)
+
+.popover.bs-popover-auto[x-placement^="bottom"] .arrow::after, .popover.bs-popover-bottom .arrow::after
+  border-bottom-color var(--accentBackground)
+
+/* --- Calendar revert fixes ---*/
+#event_details_template textarea,
+#event_details_template input
+  background-color white
+
+#eventDetailsTable .label,
+.loaderInfo,
+#CalDavZAPPopup
+  color black
+
+/* /-- --------------------- --\*/
+/* |-- COLOR UNRELATED FIXES --|*/
+/* \__ _____________________ __/*/
+
+.timeline__comment.received
+  margin-inline-end 0
+
+.revision
+  width inherit
+  margin 10px 15% 10px 0
+
+
+
