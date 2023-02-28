@@ -2,6 +2,17 @@
 
 A [Tracim](https://github.com/tracim/tracim) theme engine and theme repository
 
+- [How does it work](#how-does-it-work)
+- [How to use](#how-to-use)
+  * [Separate files](#separate-files)
+  * [Bundled file](#bundled-file)
+  * [With the Stylus browser extension](#with-the-stylus-browser-extension)
+- [Creating a theme](#creating-a-theme)
+- [Contributing](#contributing)
+  * [Creating](#creating)
+  * [Editing](#editing)
+  * [Others](#others)
+- [References](#references)
 
 ## How does it work
 
@@ -26,6 +37,15 @@ If you can't or do not want to load two files, you can load bundled stylesheets.
 
 These files also contain the `styles/theme-patch.css` stylesheet, permitting to apply the style in a single file.
 
+
+### With the Stylus browser extension
+
+Download the Stylus browser extension for your browser ([For Firefox](https://addons.mozilla.org/fr/firefox/addon/styl-us/) / [For Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne))
+
+Once it is installed refresh your Tracim tab(s) and then click on the Stylus icon (often hidden in the plugins menu)
+From here you'll see a `Write a style for sub.example.com/smth / This URL` on the bottom of the popup window, click on the appropriate URL segment (top level subdomain is recommended). It will open a window with a text field, copy and paste the **bundled** theme file of your choice and click on `Save`.
+
+From now on go back on a Tracim tab, click on the Stylus icon and check the style you juste created. Style may be applied immediatly, if so you don't need to check the box, of course. If you have multiple open tabs you might have to refresh your other tabs for the style to apply.
 
 ## Creating a theme
 
