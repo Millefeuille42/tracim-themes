@@ -68,11 +68,17 @@ div.tox .tox-toolbar,
 .emoji-mart-category .emoji-mart-emoji:hover::before,
 .toDo__progressBar_container,
 .search,
+.memberlist .filterBar,
+.memberlist .filterBar .textinput__box,
+.memberlist .filterBar .textinput__box input,
 .checkboxFilter__title,
+.tox .tox-menu,
 .searchFilterMenu__content__item__title,
 .iconbutton-secondary:hover,
 .css-1n7v3ny-option,
 .folder .folder__header:hover,
+.iconbutton-pins-dark,
+.tox .tox-tbtn:hover,
 .css-9gakcf-option:hover,
 .contentItem:hover {
   background-color: var(--accentBackground2);
@@ -94,9 +100,12 @@ button,
 .table tr:nth-child(2n),
 .workspaceRecentActivities,
 .tracim__content,
+.tox .tox-collection--toolbar .tox-collection__item--active,
 .tab__active,
 .linkPreview,
 .cardPopup__container,
+.tox .tox-tbtn--enabled,
+.tox .tox-tbtn--enabled:hover,
 .kanban__contentpage__wrapper .react-kanban-column,
 .kanban__columnAdder:hover,
 .badge,
@@ -105,6 +114,7 @@ button,
 .feedItemFooter__right__participate:hover,
 .EmojiReactionButton__button:not(.primaryColorBgOpacity),
 .flashmessage__container,
+code,
 .iconbutton-secondary,
 .dropdown-item,
 .tab:hover {
@@ -195,6 +205,7 @@ button,
 .emptyListMessage,
 .advancedSearch__content__detail,
 .badge,
+pre,
 .memberActivity__workspace:hover,
 .sidebar__item__menu__element *,
 .feedItemFooter__right__participate,
@@ -243,6 +254,7 @@ button,
 /* --- CustomColors --- */
 /* -- ----customPrimary --*/
 .primaryColorFont,
+code,
 .primaryColorFontDarken {
   color: var(--customPrimary);
 }
@@ -250,6 +262,7 @@ button,
   background-color: var(--customPrimary);
 }
 .primaryColorBgOpacity,
+.iconbutton-pins-dark,
 .primaryColorBorder {
   border-color: var(--customPrimary);
 }
@@ -304,8 +317,10 @@ button,
 .tox .tox-tbtn:hover svg,
 .emoji-mart button,
 .emoji-mart-category button.emoji-mart-emoji span,
+.tox-collection__item-icon svg,
+.tox .tox-collection__item-caret svg,
 .tox .tox-tbtn svg {
-  fill: var(--accentText2);
+  fill: var(--accentText2) !important;
 }
 .filterBar {
   border: 1px solid var(--standardBackground);
@@ -313,6 +328,9 @@ button,
 .wsContentGeneric__header,
 .filterBar .textinput__text {
   border-bottom: 1px solid var(--standardBackground);
+}
+.memberlist .filterBar .textinput__text {
+  border-bottom: none;
 }
 .thread__contentpage__comment,
 .thread__contentpage__messagelist__version,
@@ -334,15 +352,126 @@ button,
 .popover.bs-popover-bottom .arrow::after {
   border-bottom-color: var(--accentBackground);
 }
-/* --- Calendar revert fixes ---*/
-#event_details_template textarea,
-#event_details_template input {
-  background-color: #fff;
+.tox .tox-collection--list .tox-collection__item--active,
+.tox-collection__item--active .tox-collection__item-label,
+.tox-collection__item--active .tox-collection__item-label > * {
+  background-color: var(--accentBackground) !important;
 }
-#eventDetailsTable .label,
+.tox .tox-collection--list .tox-collection__group,
+.tox .tox-menu {
+  border-color: var(--accentBackground2) !important;
+}
+.tox-tbtn.tox-tbtn--select.tox-tbtn--bespoke,
+.tox .tox-collection__item {
+  color: var(--standardText) !important;
+}
+/* /-- ---------------------- --\*/
+/* |-- CALENDAR RELATED FIXES --|*/
+/* \__ ______________________ __/*/
+/* Separating because it's a mess */
+.searchContainer input,
+.fc-widget-content,
+.fc-state-highlight,
+#MainLoader,
+#EventDisabler,
+.fc-widget-content.fc-weekend-day,
+.fc-widget-content tr.fc-weekend-day,
+.headers,
+#main_h,
+#ResourceCalDAVList,
+#ResourceCalDAVTODOList,
+#searchForm,
+#main,
+#mainTODO,
+#event_details_template,
+#todo_details_template,
+.fc-widget-header,
+#CalDavZAPPopup,
+.resourceCalDAV_header,
+.ui-widget-content,
+.resourceCalDAVTODO_header {
+  background-color: var(--standardBackground);
+}
+.fc-week-number,
+.fc-view-list .fc-list-header,
+.fc-view-table td.fc-list-header,
+.fc-view-todo td.fc-list-header {
+  background-color: var(--accentBackground2);
+}
+.ui-state-active,
+.ui-widget-content .ui-datepicker-week-end .ui-state-active,
+.fc-state-default,
+.fc-state-default .fc-button-inner,
+.ui-widget-content .ui-datepicker-today .ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  background-color: var(--accentBackground2) !important;
+}
+.fc-event.fc-event-row:hover {
+  background-color: var(--accentBackground);
+}
+#timezoneWrapper,
+#timezoneWrapperTODO,
+.fc-state-active,
+.fc-state-active .fc-button-inner,
+#event_details_template textarea,
+#event_details_template input,
+#event_details_template select,
+#ResourceCalDAVList .resourceCalDAV_item:hover,
+#ResourceCalDAVTODOList .resourceCalDAVTODO_item:hover,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+#timezoneWrapper select,
+#timezoneWrapperTODO select {
+  background-color: var(--accentBackground) !important;
+  background: var(--accentBackground) !important;
+}
+.fc-widget-content,
+.fc-widget-content.fc-weekend-day,
+.fc-widget-content tr.fc-weekend-day,
+.searchContainer input,
+.headers,
+#main_h,
+#ResourceCalDAVList,
+#ResourceCalDAVTODOList,
+.iconbutton-pins-dark,
+#searchForm,
+.fc-widget-header,
+.resourceCalDAV_header,
+.resourceCalDAVTODO_header,
+.resourceCalDAV_item,
+.resourceCalDAVTODO_item,
+.ui-widget-content,
+#timezoneWrapper,
+#timezoneWrapperTODO,
+#timezoneWrapper select,
+#timezoneWrapperTODO select,
+#CalDavZAPPopup,
+.fc-view-list .fc-list-header,
+.fc-view-table td.fc-list-header,
+.fc-view-todo td.fc-list-header,
+.fc-event.fc-event-row:hover {
+  color: var(--standardText);
+}
+#ResourceCalDAVList .resourceCalDAV_item:hover,
+#ResourceCalDAVTODOList .resourceCalDAVTODO_item:hover,
 .loaderInfo,
-#CalDavZAPPopup {
-  color: #000;
+#eventDetailsTable .label,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+#event_details_template select,
+.fc-state-default,
+.fc-state-default .fc-button-inner,
+#event_details_template textarea,
+#event_details_template input,
+.ui-state-active,
+.ui-widget-content .ui-datepicker-week-end .ui-state-active,
+.ui-widget-content .ui-datepicker-today .ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  color: var(--standardText) !important;
 }
 /* /-- --------------------- --\*/
 /* |-- COLOR UNRELATED FIXES --|*/
