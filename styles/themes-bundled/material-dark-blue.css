@@ -533,3 +533,11 @@ code,
 .revision + .timeline__messagelist__item {
   margin-top: 20px;
 }
+.checkboxFilter__title + .checkboxFilter__checkbox,
+.searchFilterMenu__content__item__title + .dateFilter {
+  margin-top: 10px;
+}
+.checkboxFilter .checkboxFilter__checkbox:last-of-type,
+.dateFilter {
+  margin-bottom: 20px;
+}
