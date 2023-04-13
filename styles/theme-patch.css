@@ -16,6 +16,13 @@ input,
 .filterBar,
 .filterBar .textinput__box,
 .filterBar .textinput__text,
+.tox .tox-split-button:focus,
+.tox .tox-tbtn--enabled,
+.tox .tox-textarea,
+.tox .tox-textarea:focus,
+.tox .tox-dialog-wrap__backdrop,
+.tox .tox-selectfield select,
+.tox .tox-selectfield select:focus,
 .notification,
 .account__userpreference__setting,
 .workspace_advanced__contentpage__content__left,
@@ -71,6 +78,9 @@ div.tox .tox-toolbar,
 .memberlist .filterBar,
 .memberlist .filterBar .textinput__box,
 .memberlist .filterBar .textinput__box input,
+.tox .tox-toolbar,
+.tox .tox-toolbar__overflow,
+.tox .tox-toolbar__primary,
 .checkboxFilter__title,
 .tox .tox-menu,
 .searchFilterMenu__content__item__title,
@@ -78,7 +88,6 @@ div.tox .tox-toolbar,
 .css-1n7v3ny-option,
 .folder .folder__header:hover,
 .iconbutton-pins-dark,
-.tox .tox-tbtn:hover,
 .css-9gakcf-option:hover,
 .contentItem:hover {
   background-color: var(--accentBackground2);
@@ -93,6 +102,10 @@ button,
 .rightPartClose .wsContentGeneric__content__right__header__icon.active,
 .personaldata__form__txtinput:focus,
 .agendaInfo__content__link__url,
+.tox .tox-tbtn:hover,
+.tox .tox-dialog__header,
+.tox .tox-dialog,
+.tox .tox-dialog__footer,
 .agendaInfo__content__link__icon,
 .wsContentGeneric__content__right__content,
 .webdavInfo__content__link__url,
@@ -104,8 +117,6 @@ button,
 .tab__active,
 .linkPreview,
 .cardPopup__container,
-.tox .tox-tbtn--enabled,
-.tox .tox-tbtn--enabled:hover,
 .kanban__contentpage__wrapper .react-kanban-column,
 .kanban__columnAdder:hover,
 .badge,
@@ -125,7 +136,8 @@ span.mention-me {
   background-color: var(--mentionHighlight);
 }
 /* -- --notification --*/
-.notification__list__item {
+.notification__list__item,
+.mention {
   background-color: var(--notification);
 }
 .notification__list__item.isMention:not(.itemRead) {
@@ -168,6 +180,16 @@ button,
 .wsContentGeneric .headerBtn__link:hover,
 .folder__header__lastModification,
 .content__lastModification,
+.tox .tox-textarea,
+.tox .tox-dialog__header,
+.tox .tox-button--naked,
+.tox .tox-dialog,
+.tox .tox-dialog__footer,
+.tox .tox-dialog__body,
+.tox .tox-dialog__body-nav-item,
+.tox .tox-dialog__body-content .tox-form__group h1,
+.tox .tox-dialog__body-content .tox-form__group h2,
+.tox .tox-label,
 .advancedSearchContent__information,
 .advancedSearchContent__title,
 .folder__header__name,
@@ -341,6 +363,7 @@ code,
 }
 .thread__contentpage__comment,
 .thread__contentpage__messagelist__version,
+.tox .tox-tbtn--enabled:hover,
 .thread__contentpage__texteditor__textinput > textarea {
   background-color: var(--standardBackground);
 }
@@ -371,6 +394,15 @@ code,
 .tox-tbtn.tox-tbtn--select.tox-tbtn--bespoke,
 .tox .tox-collection__item {
   color: var(--standardText) !important;
+}
+.tox .tox-toolbar-overlord {
+  background-color: transparent;
+}
+.tox-tinymce,
+.tox .tox-dialog__header,
+.tox .tox-dialog,
+.tox .tox-dialog__footer {
+  border: none;
 }
 /* /-- ---------------------- --\*/
 /* |-- CALENDAR RELATED FIXES --|*/
@@ -503,4 +535,10 @@ code,
 .checkboxFilter .checkboxFilter__checkbox:last-of-type,
 .dateFilter {
   margin-bottom: 20px;
+}
+.tox .tox-tbtn {
+  cursor: pointer;
+}
+.tox .tox-dialog-wrap__backdrop {
+  opacity: 0.75;
 }
